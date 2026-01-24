@@ -2,3 +2,31 @@
   color: var(--color-white);
   background-color: var(--color-red);
 }
+
+/* About */
+.about-img-box {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.about-img-box img {
+  object-fit: cover;
+}
+
+/* Projects */
+.project-img-box {
+  position: relative;
+  width: 15rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.project-img-box img {
+  object-fit: cover;
+}
+
+.project-img-inner-offset {
+  object-position: top;
+}
