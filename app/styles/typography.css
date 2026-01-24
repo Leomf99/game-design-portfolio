@@ -1,0 +1,29 @@
+.black-txt {
+  color: var(--color-black);
+  font-weight: 400;
+}
+
+.black-txt-sb {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.white-txt {
+  color: var(--color-white);
+  font-weight: 400;
+}
+
+.white-txt-sb {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.red-txt {
+  color: var(--color-red-subtle);
+  font-weight: 400;
+}
+
+.red-txt-sb {
+  color: var(--color-red-subtle);
+  font-weight: 600;
+}
