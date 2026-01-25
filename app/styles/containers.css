@@ -1,6 +1,5 @@
 .exp-container {
-  color: var(--color-white);
-  background-color: var(--color-red);
+  @apply text-brand-white bg-brand-red p-4;
 }
 
 /* About */
@@ -29,4 +28,8 @@
 
 .project-img-inner-offset {
   object-position: top;
+}
+
+.skill-box {
+  @apply bg-brand-red p-2 text-brand-white text-2xl;
 }

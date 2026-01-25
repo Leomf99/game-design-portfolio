@@ -3,5 +3,13 @@
   --color-white: #fffbfa;
   --color-red: #8c4849;
   --color-red-subtle: #a77473;
-  --color-bg: #AFAFAF
+  --color-bg: #AFAFAF;
+}
+
+@theme {
+  --color-brand-black: #212121;
+  --color-brand-white: #fffbfa;
+  --color-brand-red: #8c4849;
+  --color-brand-red-subtle: #a77473;
+  --color-brand-bg: #AFAFAF;
 }
