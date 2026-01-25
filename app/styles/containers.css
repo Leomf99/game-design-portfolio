@@ -30,6 +30,7 @@
   object-position: top;
 }
 
+/* Skills */
 .skill-box {
   @apply bg-brand-red p-2 text-brand-white text-2xl;
 }

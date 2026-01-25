@@ -140,7 +140,7 @@ export default function HomePage() {
 
       {/* Section 4: Experience */}
       <Section id="experience" title="Experience">
-        <div className="relative flex flex-col px-10">
+        <div className="relative flex flex-col px-10 mt-20">
           {/* Center line */}
           <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-brand-red" />
 

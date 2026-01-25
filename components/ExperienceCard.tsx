@@ -14,11 +14,7 @@ export default function ExperienceCard({
   align,
 }: ExperienceCardProps) {
   return (
-    <div
-      className={`exp-container w-[45%] ${
-        align === "left" ? "text-left pr-8" : "text-left pl-8"
-      }`}
-    >
+    <div className={`exp-container w-[45%]`}>
       <span className="font-bold">{role}</span>
       <br />
       <span>{place}</span>
