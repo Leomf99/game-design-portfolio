@@ -5,11 +5,11 @@ import Section from "@/components/Section";
 export default function AboutSection() {
   return (
     <Section id="about" title="About me">
-      <div className="flex justify-center items-center gap-20">
+      <div className="flex flex-col justify-center gap-5 items-center md:gap-20 md:flex-row">
         <div className="about-img-box">
           <Image src="/images/about.jpg" alt="About" fill priority />
         </div>
-        <p className="w-[60%] text-center">
+        <p className="w-[90%] md:w-[60%] text-center">
           Hi! Alexis Islas Valdés here. I'm an aspiring Game Designer from
           Mexico, with experience in projects with various scopes using Unreal
           Engine 5. I'm very systematic person that enjoys overcoming

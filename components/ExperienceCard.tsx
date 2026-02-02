@@ -14,7 +14,7 @@ export default function ExperienceCard({
   align,
 }: ExperienceCardProps) {
   return (
-    <div className={`exp-container w-[45%]`}>
+    <div className="exp-container w-full md:w-[45%]">
       <span className="font-bold">{role}</span>
       <br />
       <span>{place}</span>

@@ -39,7 +39,7 @@ export default function ProjectsSection() {
         These are some of my most recent works, showcasing a range of creative
         and technical skills across different projects.
       </p>
-      <div className="flex justify-evenly gap-8">
+      <div className="flex flex-col items-center justify-evenly gap-6 md:flex-row md:gap-8">
         {projectImages.map((image, index) => (
           <Link
             className="project-img-box"

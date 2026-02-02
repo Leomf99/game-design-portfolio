@@ -16,29 +16,33 @@ export default async function ProjectSlugPage({ params }: PageProps) {
   }
 
   return (
-    <main className="px-20 py-12">
+    <main className="px-4 py-12 pt-20 md:px-10 lg:px-20">
       <NavBar
         showAbout={false}
         showProjects={false}
         showSkills={false}
         showExperience={false}
       />
-      <h1 className="text-4xl text-center font-bold  ">{project.title}</h1>
-      <h2 className="mt-10 mb-6 text-[26px] font-semibold text-center">
+      <h1 className="mt-10 text-center text-3xl font-bold md:text-4xl">
+        {project.title}
+      </h1>
+      <h2 className="mt-10 mb-6 text-center text-xl font-semibold md:text-[26px]">
         Overview
       </h2>
       <div className="mb-6 text-center">{project.overview}</div>
-      <div className="mb-6 flex justify-center h-90 w-full">
-        <video
-          className="w-full rounded-md"
-          src={project.video}
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
-      </div>
-      <div className="mt-10 mb-6 text-[26px] font-semibold text-center">
+      {project.video && (
+        <div className="mb-6 flex h-90 w-full justify-center">
+          <video
+            className="w-full rounded-md"
+            src={project.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+        </div>
+      )}
+      <div className="mt-10 mb-6 text-center text-xl font-semibold md:text-[26px]">
         Contributions
       </div>
       <ul className="mt-2 list-disc space-y-4 pl-5">
@@ -55,7 +59,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
           </li>
         ))}
       </ul>
-      <div className="-mx-20 space-y-6 my-10">
+      <div className="-mx-4 my-10 space-y-6 md:-mx-10 lg:-mx-20">
         {project.images.length > 0 && (
           <div className="carousel">
             <div className="carousel__track">
@@ -71,7 +75,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
           </div>
         )}
       </div>
-      <div className="mb-6 text-[26px] font-semibold text-center">
+      <div className="mb-6 text-center text-xl font-semibold md:text-[26px]">
         Project Details
       </div>
       <ul className="mt-2 space-y-2">
@@ -80,8 +84,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
           {project.details.studio}
         </li>
         <li>
-          <span className="font-semibold">Genre:</span>{" "}
-          {project.details.genre}
+          <span className="font-semibold">Genre:</span> {project.details.genre}
         </li>
         <li>
           <span className="font-semibold">Platform:</span>{" "}

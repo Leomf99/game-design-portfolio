@@ -4,10 +4,10 @@ import ExperienceCard from "@/components/ExperienceCard";
 export default function ExperienceSection() {
   return (
     <Section id="experience" title="Experience">
-      <div className="relative flex flex-col px-10 mt-20">
-        <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-brand-red" />
+      <div className="relative mt-6 md:mt-20 flex flex-col gap-8 px-4 md:px-10">
+        <div className="absolute left-1/2 top-0 hidden h-full w-1 -translate-x-1/2 bg-brand-red md:block" />
 
-        <div className="flex justify-start">
+        <div className="flex w-full justify-start md:w-auto">
           <ExperienceCard
             align="left"
             role="Game Designer"
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
           />
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex w-full justify-start md:w-auto md:justify-end">
           <ExperienceCard
             align="right"
             role="Master’s degree in Game Design"
@@ -35,7 +35,7 @@ export default function ExperienceSection() {
           />
         </div>
 
-        <div className="flex justify-start">
+        <div className="flex w-full justify-start md:w-auto">
           <ExperienceCard
             align="left"
             role="Technical Designer"
@@ -49,7 +49,7 @@ export default function ExperienceSection() {
           />
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex w-full justify-start md:w-auto md:justify-end">
           <ExperienceCard
             align="right"
             role="Bachelor’s degree in Digital Creativity"
