@@ -3,6 +3,7 @@
 @import "./styles/typography.css";
 @import "./styles/buttons.css";
 @import "./styles/containers.css";
+@import "./styles/carousel.css";
 
 :root {
   --background: var(--color-bg);

@@ -15,7 +15,7 @@ export default async function ExperienceSlugPage({ params }: PageProps) {
   }
 
   return (
-    <main>
+    <main className="px-20 py-12">
       <h1>{experience.role}</h1>
       <p>
         {experience.company} · {experience.location}
