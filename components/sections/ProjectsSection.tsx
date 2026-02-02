@@ -7,25 +7,25 @@ const projectImages = [
   {
     src: "/images/projects/DesiertoMagico1.png",
     alt: "Desierto Magico",
-    href: "#",
+    href: "/projects/desierto-magico",
     title: "Ver Desierto Mágico",
   },
   {
     src: "/images/projects/EradeHielo4.png",
     alt: "Era de Hielo",
-    href: "#",
+    href: "/projects/era-de-hielo",
     title: "Ver Era de Hielo",
   },
   {
     src: "/images/projects/NMW.png",
     alt: "Not My War",
-    href: "#",
+    href: "/projects/not-my-war",
     title: "Ver Not My War",
   },
   {
     src: "/images/projects/Odisea5.png",
     alt: "Odisea",
-    href: "#",
+    href: "/projects/odisea",
     title: "Ver Odisea",
   },
 ];
