@@ -2,7 +2,7 @@ export default function HeroSection() {
   return (
     <div
       id="home"
-      className="relative h-screen w-full overflow-hidden bg-black "
+      className="relative -top-12.5 h-screen w-full overflow-hidden bg-black "
     >
       <video
         className="absolute inset-0 h-full w-full object-cover"

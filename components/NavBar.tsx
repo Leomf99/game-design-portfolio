@@ -79,39 +79,41 @@ export default function NavBar({
         hidden && !menuOpen ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="mx-auto flex h-14 w-full items-center justify-between px-4 md:px-6">
-        <a
-          className="text-sm font-semibold uppercase tracking-[0.2em]"
-          href={homeHref}
-        >
-          Portfolio
-        </a>
-        <button
-          type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40 md:hidden"
-          aria-expanded={menuOpen}
-          aria-label="Toggle navigation"
-          onClick={() => setMenuOpen((prev) => !prev)}
-        >
-          <span className="relative block h-3 w-5">
-            <span
-              className={`absolute left-0 top-0 h-0.5 w-5 bg-white transition-transform duration-200 ${
-                menuOpen ? "translate-y-1.5 rotate-45" : ""
-              }`}
-            />
-            <span
-              className={`absolute left-0 top-1.5 h-0.5 w-5 bg-white transition-opacity duration-200 ${
-                menuOpen ? "opacity-0" : "opacity-100"
-              }`}
-            />
-            <span
-              className={`absolute left-0 top-3 h-0.5 w-5 bg-white transition-transform duration-200 ${
-                menuOpen ? "-translate-y-1.5 -rotate-45" : ""
-              }`}
-            />
-          </span>
-        </button>
-        <div className="hidden md:flex md:items-center md:gap-6">
+      <div className="mx-auto flex h-14 w-full items-center px-4 md:px-6">
+        <div className="flex w-full items-center justify-between md:hidden">
+          <a
+            className="text-sm font-semibold uppercase tracking-[0.2em]"
+            href={homeHref}
+          >
+            Home
+          </a>
+          <button
+            type="button"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/40"
+            aria-expanded={menuOpen}
+            aria-label="Toggle navigation"
+            onClick={() => setMenuOpen((prev) => !prev)}
+          >
+            <span className="relative block h-3 w-5">
+              <span
+                className={`absolute left-0 top-0 h-0.5 w-5 bg-white transition-transform duration-200 ${
+                  menuOpen ? "translate-y-1.5 rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-1.5 h-0.5 w-5 bg-white transition-opacity duration-200 ${
+                  menuOpen ? "opacity-0" : "opacity-100"
+                }`}
+              />
+              <span
+                className={`absolute left-0 top-3 h-0.5 w-5 bg-white transition-transform duration-200 ${
+                  menuOpen ? "-translate-y-1.5 -rotate-45" : ""
+                }`}
+              />
+            </span>
+          </button>
+        </div>
+        <div className="hidden w-full items-center justify-evenly md:flex">
           {filteredItems.map((item) => (
             <a
               key={item.href}
@@ -130,7 +132,9 @@ export default function NavBar({
               <a
                 key={`mobile-${item.href}`}
                 className="text-sm"
-                href={"key" in item && item.key === "home" ? homeHref : item.href}
+                href={
+                  "key" in item && item.key === "home" ? homeHref : item.href
+                }
                 onClick={() => setMenuOpen(false)}
               >
                 {item.label}
