@@ -1,17 +1,32 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+
+type NavBarProps = {
+  showAbout?: boolean;
+  showProjects?: boolean;
+  showSkills?: boolean;
+  showExperience?: boolean;
+};
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Experience", href: "#experience" },
-  { label: "Contact", href: "#contact" },
-];
+  { label: "Home", href: "/", key: "home" },
+  { label: "About", href: "#about", key: "showAbout" },
+  { label: "Projects", href: "#projects", key: "showProjects" },
+  { label: "Skills", href: "#skills", key: "showSkills" },
+  { label: "Experience", href: "#experience", key: "showExperience" },
+  { label: "Contact", href: "/#contact" },
+] as const;
 
-export default function NavBar() {
+export default function NavBar({
+  showAbout = true,
+  showProjects = true,
+  showSkills = true,
+  showExperience = true,
+}: NavBarProps) {
+  const pathname = usePathname();
+  const homeHref = pathname === "/" ? "#home" : "/";
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
@@ -51,15 +66,24 @@ export default function NavBar() {
       }`}
     >
       <div className="mx-auto flex h-14 w-full items-center justify-evenly px-6">
-        {navItems.map((item) => (
-          <a
-            key={item.href}
-            className="transition-colors hover:text-black"
-            href={item.href}
-          >
-            {item.label}
-          </a>
-        ))}
+        {navItems
+          .filter((item) => {
+            if (!("key" in item)) return true;
+            if (item.key === "showAbout") return showAbout;
+            if (item.key === "showProjects") return showProjects;
+            if (item.key === "showSkills") return showSkills;
+            if (item.key === "showExperience") return showExperience;
+            return true;
+          })
+          .map((item) => (
+            <a
+              key={item.href}
+              className="transition-colors hover:text-black"
+              href={"key" in item && item.key === "home" ? homeHref : item.href}
+            >
+              {item.label}
+            </a>
+          ))}
       </div>
     </nav>
   );

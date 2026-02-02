@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import { projects } from "@/app/content/projects";
+import NavBar from "@/components/NavBar";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -16,6 +17,12 @@ export default async function ProjectSlugPage({ params }: PageProps) {
 
   return (
     <main className="px-20 py-12">
+      <NavBar
+        showAbout={false}
+        showProjects={false}
+        showSkills={false}
+        showExperience={false}
+      />
       <h1 className="text-4xl text-center font-bold  ">{project.title}</h1>
       <h2 className="mt-10 mb-6 text-[26px] font-semibold text-center">
         Overview
