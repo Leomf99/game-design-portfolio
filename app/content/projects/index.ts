@@ -1,3 +1,6 @@
 import { notMyWar } from "./not-my-war";
+import { imaginacionFgs } from "./imaginacion-fgs";
 
-export const projects = [notMyWar];
+const allProjects = [notMyWar, imaginacionFgs];
+
+export const projects = allProjects.filter((project) => project.published);

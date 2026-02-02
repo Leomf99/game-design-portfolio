@@ -10,7 +10,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
 
-  if (!project) {
+  if (!project || !project.published) {
     notFound();
   }
 

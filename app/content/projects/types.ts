@@ -1,6 +1,7 @@
 export type Project = {
   slug: string;
   title: string;
+  published: boolean;
   overview: string;
   contributions: Array<{
     text: string;

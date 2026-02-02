@@ -3,6 +3,7 @@ import type { Project } from "./types";
 export const notMyWar: Project = {
   slug: "not-my-war",
   title: "Not My War",
+  published: true,
   overview: `Not My War is a 3D isometric stealth and exploration game where the player
                 incarnates
                 a small white ferret. Explore, survive, and escape an island overrun by deadly
