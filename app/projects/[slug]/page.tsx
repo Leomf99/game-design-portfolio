@@ -23,7 +23,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
         showSkills={false}
         showExperience={false}
       />
-      <h1 className="mt-10 text-center text-3xl font-bold md:text-4xl">
+      <h1 className="mt-1 md:mt-6 text-center text-3xl font-bold md:text-4xl">
         {project.title}
       </h1>
       <h2 className="mt-10 mb-6 text-center text-xl font-semibold md:text-[26px]">
@@ -31,7 +31,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
       </h2>
       <div className="mb-6 text-center">{project.overview}</div>
       {project.video && (
-        <div className="mb-6 flex h-90 w-full justify-center">
+        <div className="mb-6 flex h-55 md:h-90 w-full justify-center">
           <video
             className="w-full rounded-md"
             src={project.video}
@@ -42,7 +42,7 @@ export default async function ProjectSlugPage({ params }: PageProps) {
           />
         </div>
       )}
-      <div className="mt-10 mb-6 text-center text-xl font-semibold md:text-[26px]">
+      <div className="md-5 md:mt-10 mb-6 text-center text-xl font-semibold md:text-[26px]">
         Contributions
       </div>
       <ul className="mt-2 list-disc space-y-4 pl-5">
