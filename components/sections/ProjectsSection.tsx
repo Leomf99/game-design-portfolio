@@ -8,25 +8,29 @@ const projectImages = [
     src: "/images/projects/DesiertoMagico1.png",
     alt: "Desierto Magico",
     href: "/projects/desierto-magico",
-    title: "Ver Desierto Mágico",
+    title: "Desierto Mágico",
+    subtitle: "VR educational experience",
   },
   {
     src: "/images/projects/EradeHielo4.png",
     alt: "Era de Hielo",
     href: "/projects/era-de-hielo",
-    title: "Ver Era de Hielo",
+    title: "Era de Hielo",
+    subtitle: "Paleolithic VR adventure",
   },
   {
     src: "/images/projects/NMW.png",
     alt: "Not My War",
     href: "/projects/not-my-war",
-    title: "Ver Not My War",
+    title: "Not My War",
+    subtitle: "Isometric stealth game",
   },
   {
     src: "/images/projects/Odisea5.png",
     alt: "Odisea",
     href: "/projects/odisea",
-    title: "Ver Odisea",
+    title: "Odisea",
+    subtitle: "Safari-style VR learning",
   },
 ];
 
@@ -42,18 +46,26 @@ export default function ProjectsSection() {
       <div className="flex flex-col items-center justify-evenly gap-6 md:flex-row md:gap-8">
         {projectImages.map((image, index) => (
           <Link
-            className="project-img-box"
+            className="project-img-box group relative"
             key={image.src}
             href={image.href}
-            title={image.title}
+            title={`Ver ${image.title}`}
           >
             <Image
               src={image.src}
               alt={image.alt}
               fill
               priority
-              className={index === 2 ? "project-img-inner-offset" : ""}
+              className={`transition-transform duration-300 group-hover:scale-105 ${
+                index === 2 ? "project-img-inner-offset" : ""
+              }`}
             />
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 bg-black/0 text-center text-white/0 transition-all duration-300 group-hover:bg-black/60 group-hover:text-white">
+              <span className="text-lg font-semibold">{image.title}</span>
+              <span className="px-5 text-xs uppercase tracking-[0.2em] text-white/70 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                {image.subtitle}
+              </span>
+            </div>
           </Link>
         ))}
       </div>
