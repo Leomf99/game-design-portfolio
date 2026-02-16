@@ -10,16 +10,19 @@ export default function ContactSection() {
         </p>
         <form
           className="grid gap-4"
-          action="mailto:alex.islas.v2@gmail.com"
+          action="https://formsubmit.co/alex.islas.v2@gmail.com"
           method="post"
-          encType="text/plain"
         >
+          <input type="hidden" name="_subject" value="New portfolio contact" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
           <label className="grid gap-2">
             <span className="text-sm font-medium">Name</span>
             <input
               className="w-full rounded-md border bg-brand-red-subtle text-white border-black/10 px-3 py-2"
               type="text"
               name="name"
+              autoComplete="name"
               placeholder="Your name"
               required
             />
@@ -30,6 +33,7 @@ export default function ContactSection() {
               className="w-full rounded-md border bg-brand-red-subtle text-white border-black/10 px-3 py-2"
               type="email"
               name="email"
+              autoComplete="email"
               placeholder="you@email.com"
               required
             />
