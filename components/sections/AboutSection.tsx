@@ -7,7 +7,7 @@ export default function AboutSection() {
     <Section id="about" title="About me">
       <div className="flex flex-col justify-center gap-5 items-center md:gap-20 md:flex-row">
         <div className="about-img-box">
-          <Image src="/images/aboutme.jpg" alt="About" fill priority />
+          <Image src="/images/aboutme.webp" alt="About" fill priority />
         </div>
         <p className="w-[90%] md:w-[60%] text-center">
           Hi! Alexis Islas Valdés here. I'm an aspiring Game Designer from

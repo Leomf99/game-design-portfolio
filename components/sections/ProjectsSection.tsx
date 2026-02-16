@@ -5,28 +5,28 @@ import Section from "@/components/Section";
 
 const projectImages = [
   {
-    src: "/images/projects/DesiertoMagico1.png",
+    src: "/images/projects/PosterDesierto.webp",
     alt: "Desierto Magico",
     href: "/projects/desierto-magico",
     title: "Desierto Mágico",
     subtitle: "VR educational experience",
   },
   {
-    src: "/images/projects/EradeHielo4.png",
+    src: "/images/projects/PosterEradeHielo.webp",
     alt: "Era de Hielo",
     href: "/projects/era-de-hielo",
     title: "Era de Hielo",
     subtitle: "Paleolithic VR adventure",
   },
   {
-    src: "/images/projects/NMW.png",
+    src: "/images/projects/NMW.webp",
     alt: "Not My War",
     href: "/projects/not-my-war",
     title: "Not My War",
     subtitle: "Isometric stealth game",
   },
   {
-    src: "/images/projects/Odisea5.png",
+    src: "/images/projects/PosterOdisea.webp",
     alt: "Odisea",
     href: "/projects/odisea",
     title: "Odisea",
