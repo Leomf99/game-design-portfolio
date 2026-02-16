@@ -51,11 +51,10 @@ export const notMyWar: Project = {
       text: "Exhaustive testing and QA of the game.",
     },
     {
-      text:
-        "Reported and documented every bug I found to ease the programming team's job.",
+      text: "Reported and documented every bug I found to ease the programming team's job.",
     },
   ],
-  video: "/videos/NMW_gameplay_showcase.mp4",
+  video: "/videos/NMW.mp4",
   images: [
     "/images/nmw/nmw-1.webp",
     "/images/nmw/nmw-2.webp",
