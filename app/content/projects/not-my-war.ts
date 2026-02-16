@@ -57,10 +57,10 @@ export const notMyWar: Project = {
   ],
   video: "/videos/NMW_gameplay_showcase.mp4",
   images: [
-    "/images/nmw/nmw-1.jpg",
-    "/images/nmw/nmw-2.jpg",
-    "/images/nmw/nmw-3.jpg",
-    "/images/nmw/nmw-4.jpg",
+    "/images/nmw/nmw-1.webp",
+    "/images/nmw/nmw-2.webp",
+    "/images/nmw/nmw-3.webp",
+    "/images/nmw/nmw-4.webp",
   ],
   details: {
     studio: "24-Pack Studios",
