@@ -27,7 +27,7 @@ create awareness about the impact of our actions on the environment.`,
       text: "Started the optimization of the pipeline we used in the studio to make modular and easy to tweak blueprints in Unreal Engine.",
     },
   ],
-  video: "",
+  video: "/videos/Desierto.mp4",
   images: [
     "/images/desierto/desierto-1.jpg",
     "/images/desierto/desierto-2.jpg",
