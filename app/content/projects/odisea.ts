@@ -19,24 +19,26 @@ engage more with the activity.`,
       ],
     },
     {
-      text:
-        "Reorganized the blueprints that were used in a previous version of the project to make them more comprehensive for future usage and updates that came along with the development.",
+      text: "Reorganized the blueprints that were used in a previous version of the project to make them more comprehensive for future usage and updates that came along with the development.",
     },
     {
-      text:
-        "Optimized the game to make the transition from a PC VR format into the Meta Quest 2 format that needed less load to function properly.",
+      text: "Optimized the game to make the transition from a PC VR format into the Meta Quest 2 format that needed less load to function properly.",
     },
     {
-      text:
-        "Designed the levels and challenges for the experiences and assisted the artists to decorate the levels.",
+      text: "Designed the levels and challenges for the experiences and assisted the artists to decorate the levels.",
     },
     {
-      text:
-        "Refined the pipeline the original experience used to make it easier to tweak blueprints in Unreal Engine.",
+      text: "Refined the pipeline the original experience used to make it easier to tweak blueprints in Unreal Engine.",
     },
   ],
-  video: "",
-  images: [],
+  video: "/videos/Odisea.mp4",
+  images: [
+    "/images/odisea/Odisea1.webp",
+    "/images/odisea/Odisea2.webp",
+    "/images/odisea/Odisea3.webp",
+    "/images/odisea/Odisea4.webp",
+    "/images/odisea/Odisea5.webp",
+  ],
   details: {
     studio: "Hyperlab",
     genre: "VR, Educational, Adventure",
