@@ -48,7 +48,7 @@ export default function ContactSection() {
             />
           </label>
           <button
-            className="inline-flex items-center justify-center rounded-md bg-brand-red px-4 py-2 text-white"
+            className="relative cursor-pointer inline-flex items-center justify-center rounded-md bg-brand-red px-4 py-2 text-white focus:bg-red-950 active:translate-y-1 transition duration-100 "
             type="submit"
           >
             Send message
